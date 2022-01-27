@@ -80,7 +80,7 @@
                                                     FROM data_service
                                                     LEFT JOIN tbl_transaksi
                                                     ON tbl_transaksi.id = data_service.id 
-                                                    WHERE substr(tgl_masuk,1,7)='$ambilthn-$ambilbln'";
+                                                    WHERE substr(tgl_pengambilan,1,7)='$ambilthn-$ambilbln'";
                             $query = mysqli_query($koneksi, $sql) or die("SQL Anda Salah");
                             //Baca hasil query dari databse, gunakan perulangan untuk
                             //Menampilkan data lebh dari satu. disini akan digunakan
